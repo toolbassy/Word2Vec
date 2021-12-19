@@ -1,4 +1,4 @@
-# Web Scrapping and Analysing the data
+# Word Representations in Vector Space
 This work has been implemented with the **Continuous Skip-gram Model** using the Jupyter Notebook.
 
 In the Skip-gram model each current word is an input to the log-linear classifier and the model predicts words within a context window (neighbourhood) before and after the current word. The input xk represents the one-hot encoded vector corresponding to the current word in the training sample. The words y1, . . . , yC are the one-hot encodings of the output context words. The input word is projected to the hidden layer of N neurons through a weight matrix W of dimensions V × N. The ith row of W with N dimensions represents the word vector of the ith word in the vocabulary. Each output vector yi has an associated weight matrix N × V represented as W 0 with softmax as the activation. The projection matrix acts as a lookup table since we are using one-hot encodings.
